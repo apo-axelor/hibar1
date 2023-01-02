@@ -3,12 +3,15 @@
 "-//Hibernate/Hibernate Mapping DTD//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
 
-<hibernate-mapping>
-   <class name = "com.axelor.apps.Emp">
+<hibernate-mapping> 
+   <class name = "com.axelor.apps.Emp" table="empTable">
       
       
-      <id name = "id" type = "int" column = "id"></id>
-      <property name = "name" column = "name" type = "string"/>
+ <id name="id">  
+     <generator class="increment"></generator>  
+    </id>  
+            
+    <property name="name"></property>  
 
  
       
