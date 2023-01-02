@@ -30,7 +30,7 @@ public class App {
          session.save(s);
          
         Emp s2=session.get(Emp.class, 8);
-         session.delete(s2);
+        session.delete(s2);
  
          Transaction t = session.beginTransaction();  
 		
